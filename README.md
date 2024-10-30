@@ -1,78 +1,70 @@
-AI-Based Chatbot for Student Support
-Project Summary
-This project is an AI-powered chatbot designed to help students manage their academic journeys and unlock personalized opportunities based on their major, academic performance, and interests. The chatbot assists students in tracking milestones, accessing relevant services, and planning for their future careers.
+# Getting Started with Create React App
 
-Objective
-Develop a scalable AI chatbot that:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Provides personalized academic and extracurricular recommendations
-Tracks academic milestones and career opportunities
-Assists students in making informed decisions about their academic and career paths
-Core Features
-User Authentication
-Login: Students log in using their school email and ID.
-Security: Authentication with OAuth2 or JWT for secure access.
-Profile Retrieval: The chatbot retrieves the student’s profile details (major, year) upon login.
-Personalized Services
-Major Selection: Students specify their major for tailored recommendations.
-Service Suggestions: The chatbot recommends services such as:
-Scholarships
-Student groups
-Relevant organizations and fellowships
-Tutoring, workshops, and research opportunities
-Improvement Opportunities: The bot suggests activities that may enhance academic performance.
-AI-Powered Recommendation Engine
-Service Matching: AI-driven matching of services based on major, interests, and academic standing.
-Example Recommendations:
-Computer Science majors: Coding competitions, tech fellowships.
-Biology majors: Pre-med organizations, research fellowships.
-Opportunity Tracking & Milestones
-Career Planning: Information on internships, leadership roles, and senior college/grad school applications.
-Milestone Tracking: Helps students track key academic and career-related milestones:
-Senior college or graduate school application deadlines
-Steps to build a strong academic and extracurricular portfolio.
-AI Chatbot Features
-Dynamic Q&A: Answers questions about majors, deadlines, and career guidance.
-Smart Recommendations: Provides ongoing, personalized academic and extracurricular suggestions.
-Career Tips: Offers advice on maintaining grades, preparing for senior college, and planning for careers.
-Project Workflow
-1. User Authentication
-Frontend: Simple login form with email and school ID.
-Backend: Validates credentials and retrieves the user profile.
-2. Major Selection & Service Subscription
-Frontend: Asks for student’s major and displays relevant services.
-Backend: Fetches and displays suitable opportunities based on the major.
-3. AI Chatbot Interaction
-Provides personalized recommendations, answers questions, and tracks progress.
-4. Opportunity Tracking
-Sets personalized plans for staying on track with academic and career goals.
-Team Brainstorming Points
-Technical Feasibility: Decide on the tech stack (AI/ML tools, authentication system).
-User Experience (UX): Design an intuitive, user-friendly interface for student interactions.
-AI Integration: Determine machine learning algorithms for personalized recommendations.
-Scalability: Plan for scaling the chatbot across different universities and majors.
-Milestone Tracking: Define essential academic milestones for each major.
-Technology Stack
-Frontend: React/Angular/Vue (for user interface and login forms)
-Backend: Node.js/Express for authentication, user profile retrieval, and data handling
-Database: MongoDB/PostgreSQL to store user data, milestones, and recommendations
-Authentication: OAuth2/JWT for secure login
-Machine Learning: Python/Scikit-learn/TensorFlow for recommendation algorithms
-Hosting: AWS/GCP/Azure for scalability and security
-Installation
-Clone the repository:
+## Available Scripts
 
-git clone git@github.com:DianaAleksieieva/Al-student-bot.git
+In the project directory, you can run:
 
+### `npm start`
 
-Contributing
-Fork the repository.
-Create a feature branch.
-Commit your changes.
-Open a Pull Request.
-License
-This project is licensed under the MIT License.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Contact
-For questions or feedback, please reach out at aleksodiana@gmail.com, erivas157@gmail.com, Nicksig19@hotmail.com and alhassaneabdoulaye@gmail.com
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
