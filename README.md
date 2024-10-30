@@ -62,9 +62,7 @@ Hosting: AWS/GCP/Azure for scalability and security
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/student-support-chatbot.git
-cd student-support-chatbot
-Install dependencies:
+git clone git@github.com:DianaAleksieieva/Al-student-bot.git
 
 
 Contributing
