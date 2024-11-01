@@ -33,7 +33,7 @@ function Dashboard() {
       </div>
     </div>
     <div>
-    <button className="AI ChatBot">Gym</button>
+    <button className="AI-ChatBot">AI ChatBot</button>
     <p></p>
     </div>
     </div>

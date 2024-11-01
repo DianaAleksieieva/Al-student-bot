@@ -12,7 +12,7 @@ function App() {
         <Header></Header>
         <LogIn></LogIn>
         <Dashboard></Dashboard>
-        
+        <ChatBot></ChatBot>
       </header>
     </div>
   );
