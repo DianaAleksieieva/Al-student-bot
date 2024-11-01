@@ -13,7 +13,6 @@
     align-items: center;    /* Center content vertically */
     padding: 20px;          /* Padding around each block */
     margin: 10px;           /* Margin between blocks */
-    background-color: #f0f0f0; /* Background color for visibility */
     flex: 1;                /* Allow blocks to grow and take equal space */
   }
   
@@ -30,4 +29,29 @@
     padding: 10px 15px;    /* Button padding */
     font-size: 16px;        /* Button text size */
     cursor: pointer;        /* Pointer cursor on hover */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .text-block {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .button-column {
+    flex: 2; /* or 3 for the other block */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }

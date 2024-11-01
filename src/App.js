@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Dashboard from './Dashboard/Dashboard';
 import LogIn from './LogIn/LogIn';
+import Header from './Header/Header';
 
 function App() {
   return (

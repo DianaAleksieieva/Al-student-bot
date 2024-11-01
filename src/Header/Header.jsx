@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './LogIn.css';
+import './Header.css';
 
 function Header() {
   return (
-    <div className="LogIn">
-      
+    <div className="Header">
+      <p>Hello, John</p>
     </div>
   );
 }
