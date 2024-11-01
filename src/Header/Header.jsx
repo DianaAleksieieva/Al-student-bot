@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Header.css';
+import './LogIn.css';
 
 function Header() {
   return (
-    <div className="Header">
+    <div className="LogIn">
       
     </div>
   );

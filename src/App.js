@@ -1,15 +1,16 @@
 import React from 'react';
 
 import './App.css';
+import Dashboard from './Dashboard/Dashboard';
+import LogIn from './LogIn/LogIn';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
-        <p>
-          We will start working on this soon
-        </p>
+        <Header></Header>
+        <LogIn></LogIn>
+        <Dashboard></Dashboard>
         
       </header>
     </div>
