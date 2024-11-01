@@ -1,0 +1,176 @@
+/* Ensure full-page layout */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    /* Optional font */
+}
+
+.LogIn {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    /* Optional background color */
+}
+
+.LogIn h1 {
+    font-size: 5rem;
+    color: #0158A4;
+    /* Adjust size as needed */
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.LogIn p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+    max-width: 80%;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    /* Space between buttons */
+}
+
+.buttons button {
+    border-radius: 15px;
+
+    border: none;
+    color: white;
+    background-color: #0158A4;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    /* Space cards evenly */
+    flex-wrap: wrap;
+    /* Wrap cards on smaller screens */
+    margin-top: 20px;
+    /* Space between login section and cards */
+}
+
+.card {
+    background-color: #ffffff;
+    /* White background for cards */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 20px;
+    /* Inner padding */
+    width: 300px;
+    /* Fixed width for cards */
+    margin: 10px;
+    /* Spacing between cards */
+    transition: transform 0.2s;
+    /* Animation effect */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.card h2 {
+    color: #0158A4;
+    /* Title color */
+    font-size: 1.5rem;
+    /* Title font size */
+}
+
+.card p {
+    color: #333;
+    /* Text color */
+    font-size: 1rem;
+    /* Paragraph font size */
+}
+
+/* Media query for larger screens (above 1200px) */
+@media (min-width: 1200px) {
+    .LogIn h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .LogIn p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons button {
+        max-width: 300px;
+        /* Sets max width for buttons to avoid overly wide buttons */
+        padding: 15px 30px;
+    }
+}
+
+/* Media query for smaller screens (below 768px) */
+@media (max-width: 768px) {
+    .LogIn h1 {
+        padding-top: 60px;
+        font-size: 3rem;
+    }
+
+    .LogIn p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query for mobile devices (below 480px) */
+@media (max-width: 480px) {
+    .LogIn {
+        align-items: center;
+        padding: 15px;
+
+    }
+
+    .LogIn h1 {
+        padding-top: 60px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .LogIn p {
+        font-size: 0.9rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

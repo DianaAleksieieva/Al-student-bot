@@ -5,7 +5,8 @@ import './Header.css';
 function Header() {
   return (
     <div className="Header">
-      <p>Hello, John</p>
+      <div>Student Succes</div>
+      <div>Hi, John</div>
     </div>
   );
 }
