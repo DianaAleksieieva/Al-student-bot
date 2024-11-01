@@ -4,6 +4,7 @@ import './App.css';
 import Dashboard from './Dashboard/Dashboard';
 import LogIn from './LogIn/LogIn';
 import Header from './Header/Header';
+import Header from './ChatBot/ChatBot';
 
 function App() {
   return (
