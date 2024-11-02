@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Dashboard.css";
 import advisementICO from ".././img/man.png";
 import reserchICO from ".././img/dean.png";

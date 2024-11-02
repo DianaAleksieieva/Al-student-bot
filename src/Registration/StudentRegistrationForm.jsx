@@ -1,69 +1,85 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import './StudentRegistration.css';
+import { Link } from 'react-router-dom';
 
 const StudentRegistrationForm = () => {
-  const [formData, setFormData] = useState({
-    citizenshipStatus: "",
-    stateResident: "",
-    interests: "",
-  });
+  const [citizenship, setCitizenship] = useState('');
+  const [selectedInterests, setSelectedInterests] = useState([]); // Allow multiple interests
+  const [name, setName] = useState('');
+  const [cunyId, setCunyId] = useState('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleInterestClick = (interest) => {
+    // Toggle interest in the selectedInterests array
+    if (selectedInterests.includes(interest)) {
+      setSelectedInterests(selectedInterests.filter((item) => item !== interest));
+    } else {
+      setSelectedInterests([...selectedInterests, interest]);
+    }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Form submitted successfully!");
-    console.log("Prototype Form Data:", formData);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Name:', name);
+    console.log('CUNY ID:', cunyId);
+    console.log('Citizenship:', citizenship);
+    console.log('Selected Interests:', selectedInterests);
+    // Submit the form data here
   };
 
   return (
-    <form onSubmit={handleSubmit} className="student-registration-form">
-      <h2>Student Registration (Prototype)</h2>
+    <div className="student-registration-form">
+      <h2>Student Registration</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
 
-      {/* Citizenship Status */}
-      <div>
-        <label>Are you an international student or US citizen?</label>
+        <label htmlFor="cunyId">CUNY ID</label>
+        <input
+          type="text"
+          id="cunyId"
+          value={cunyId}
+          onChange={(e) => setCunyId(e.target.value)}
+          required
+        />
+
+        <label htmlFor="citizenship">Are you an International Student, US Citizen, or State Resident?</label>
         <select
-          name="citizenshipStatus"
-          value={formData.citizenshipStatus}
-          onChange={handleChange}
+          id="citizenship"
+          value={citizenship}
+          onChange={(e) => setCitizenship(e.target.value)}
+          required
         >
-          <option value="">Select</option>
-          <option value="international">International</option>
-          <option value="us-citizen">US Citizen</option>
+          <option value="">Select one</option>
+          <option value="International">International Student</option>
+          <option value="US Citizen">US Citizen</option>
+          <option value="State Resident">State Resident</option>
         </select>
-      </div>
 
-      {/* State Resident */}
-      <div>
-        <label>Are you a state resident?</label>
-        <select
-          name="stateResident"
-          value={formData.stateResident}
-          onChange={handleChange}
-        >
-          <option value="">Select</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-      </div>
+        <label>What are your interests?</label>
+        <div className="interests-container">
+          {['Technology', 'Art', 'Sport', 'Volunteering', 'Writing'].map((interest) => (
+            <button
+              key={interest}
+              type="button"
+              className={`interest-button ${selectedInterests.includes(interest) ? 'active' : ''}`}
+              onClick={() => handleInterestClick(interest)}
+            >
+              {interest}
+            </button>
+          ))}
+        </div>
 
-      {/* Interests */}
-      <div>
-        <label>Your Interests:</label>
-        <textarea
-          name="interests"
-          value={formData.interests}
-          onChange={handleChange}
-          placeholder="List your academic and extracurricular interests"
-        ></textarea>
-      </div>
-
-      {/* Submit Button */}
-      <button type="submit">Submit</button>
-    </form>
+        <Link to="/dashboard">
+        <button type="submit" className="submit-button">Submit</button>
+        </Link>
+      </form>
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import Dashboard from './Dashboard/Dashboard';
 import LogIn from './LogIn/LogIn';
 import Header from './Header/Header';
 import ChatBot from './ChatBot/ChatBot';
+import StudentRegistrationForm from './Registration/StudentRegistrationForm';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<LogIn onLoginToggle={handleLoginToggle} isLoggedIn={isLoggedIn}/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/chatbot" element={<ChatBot />} />
+        <Route path="/registration" element={<StudentRegistrationForm />} />
       </Routes>
         
     </div>

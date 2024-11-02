@@ -21,7 +21,9 @@ const LogIn = ({ onLoginToggle, isLoggedIn }) => {
                 Log In
             </button>
       </Link>
+      <Link to="/registration">
         <button>Sign In</button>
+        </Link>
       </div>
       <div className="card-container">
         <div className="card">
