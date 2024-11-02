@@ -1,0 +1,24 @@
+{
+    "clubs": [
+      {
+        "name": "Computer Programming Club",
+        "description": "The Programming Club welcomes students of all experience levels, from beginners to advanced coders. We focus on learning problem-solving techniques and collaborating to help each other succeed in our studies and future career achievements."
+      },
+      {
+        "name": "Digital Arts Club",
+        "description": "The Digital Arts Club focuses on graphic design, animation, and digital storytelling for artistic development."
+      },
+      {
+        "name": "Women In Stem Club",
+        "description": "The Women In STEM Club provides support and networking opportunities for women pursuing careers in science, technology, engineering, and mathematics."
+      },
+      {
+        "name": "Robotics Club",
+        "description": "The Robotics Club builds robots, competes in contests, and collaborates on engineering projects."
+      },
+      {
+        "name": "Gym",
+        "description": "The Gym club promotes fitness and healthy living with various exercise programs and activities for students."
+      }
+    ]
+  }

@@ -2,11 +2,12 @@ import React from 'react';
 
 import './Header.css';
 
-function Header() {
+function Header({ isLoggedIn }) {
+ 
   return (
     <div className="Header">
       <div>Student Succes</div>
-      <div>Hi, John</div>
+      {isLoggedIn ? <div>Hi, John</div> : null}
     </div>
   );
 }
