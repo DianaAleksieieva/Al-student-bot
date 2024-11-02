@@ -8,6 +8,7 @@ import FinanceICO from ".././img/money.png";
 import DepartmentICO from ".././img/coding.png";
 import Window from ".././Window/Window";
 import clubsData from "../clubsData.json";
+import ChatBot from "../ChatBot/ChatBot.jsx";
 
 const Dashboard = () => {
   const [isWindowOpen, setIsWindowOpen] = useState(false);
@@ -159,12 +160,8 @@ const Dashboard = () => {
       </div>
       <div>
         <div className="ChatBot-button-wrap">
-          <Link to="/chatbot">
-            <button className="AI-ChatBot-button">
-              AI ChatBot
-              <span className="AI-ChatBot-description">ask me a question</span>
-            </button>
-          </Link>
+          
+        <ChatBot />
         </div>
       </div>
       {isWindowOpen && selectedClub && (
