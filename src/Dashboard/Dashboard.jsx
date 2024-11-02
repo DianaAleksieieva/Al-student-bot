@@ -40,7 +40,7 @@ const Dashboard = () => {
               Student Advisement
             </a>
             <a
-              href="https://bmcc.cuny.edu/student-research"
+              href="https://www.bmcc.cuny.edu/academics/advisement/advisement/"
               className="card-dash"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Dashboard = () => {
               Student Research
             </a>
             <a
-              href={"https://bmcc.cuny.edu/career"}
+              href={"https://www.bmcc.cuny.edu/academics/faculty-affairs/research-and-scholarly-inquiry/student-research-opportunities/"}
               className="card-dash"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +66,7 @@ const Dashboard = () => {
               Career Advisement
             </a>
             <a
-              href="https://bmcc.cuny.edu/financial-aid"
+              href="https://www.bmcc.cuny.edu/student-affairs/career/"
               className="card-dash"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Dashboard = () => {
               Financial Aid Office
             </a>
             <a
-              href="https://bmcc.cuny.edu/department/cs"
+              href="https://www.bmcc.cuny.edu/finaid/"
               className="card-dash"
               target="_blank"
               rel="noopener noreferrer"
@@ -113,7 +113,7 @@ const Dashboard = () => {
               onClick={() => openWindow("Women In Stem Club")}
               className="card-dash"
             >
-              Women In Stem Club
+              Math Club
             </button>
             <button
               onClick={() => openWindow("Robotics Club")}
